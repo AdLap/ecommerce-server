@@ -9,6 +9,6 @@ export const products: NonNullable<QueryResolvers["products"]> = async (
 	return (await products).map((product) => ({
 		...product,
 		reviews: [],
-		images: [],
+		image: [],
 	}));
 };

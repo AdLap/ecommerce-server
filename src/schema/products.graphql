@@ -13,8 +13,8 @@ type Product {
 	slug: String!
 	description: String!
 	price: Int!
-	images: [Image!]!
-
+	
+	image: [Image!]!
 	reviews: [Review!]!
 
 	createdAt: DateTime!

@@ -47,7 +47,7 @@ export type Product = {
 	createdAt: Scalars["DateTime"]["output"];
 	description: Scalars["String"]["output"];
 	id: Scalars["ID"]["output"];
-	images: Array<Image>;
+	image: Array<Image>;
 	name: Scalars["String"]["output"];
 	price: Scalars["Int"]["output"];
 	reviews: Array<Review>;
@@ -228,7 +228,7 @@ export type ProductResolvers<
 	createdAt?: Resolver<ResolversTypes["DateTime"], ParentType, ContextType>;
 	description?: Resolver<ResolversTypes["String"], ParentType, ContextType>;
 	id?: Resolver<ResolversTypes["ID"], ParentType, ContextType>;
-	images?: Resolver<Array<ResolversTypes["Image"]>, ParentType, ContextType>;
+	image?: Resolver<Array<ResolversTypes["Image"]>, ParentType, ContextType>;
 	name?: Resolver<ResolversTypes["String"], ParentType, ContextType>;
 	price?: Resolver<ResolversTypes["Int"], ParentType, ContextType>;
 	reviews?: Resolver<Array<ResolversTypes["Review"]>, ParentType, ContextType>;
