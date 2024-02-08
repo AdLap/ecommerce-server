@@ -1,1 +1,24 @@
-node_modules
+# Dependency directories
+node_modules/
+
+# Output of the build process
+dist/
+
+# Environment variables
+.env
+
+# Prisma
+prisma/migrations/migration_lock.toml
+.prisma/client/
+
+# IDEs and editors
+/.vscode
+*.log
+.idea
+
+# OS generated files
+.DS_Store
+Thumbs.db
+*.pem
+
+dev.db*
