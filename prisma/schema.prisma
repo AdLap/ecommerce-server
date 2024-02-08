@@ -16,7 +16,23 @@ model Product {
   slug        String
   description String
   price       Int
+  image       String @default("")
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+  reviews Review[]
+}
+
+model Review {
+  id          String @id @default(cuid())
+  title       String
+  description String
+  rating      Int
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  productId String
+  product   Product @relation(fields: [productId], references: [id])
 }
